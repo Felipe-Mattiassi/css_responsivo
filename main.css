@@ -86,6 +86,10 @@ h3 {
     gap: 1%;
 }
 
+.descricao {
+    min-height: 115px;
+}
+
 .produto img {
     width: 100%;
 }
@@ -101,6 +105,7 @@ button {
     font-size: large;
     margin: 0.5vh 0;
     cursor: pointer;
+    margin-bottom: 50px;
 }
 
 button:hover {
@@ -149,7 +154,7 @@ button:hover {
     }
     
     .produtos h3 {
-        font-size: 1em;
+        font-size: 2em;
         margin-bottom: 1vh;
     }
     
@@ -158,7 +163,11 @@ button:hover {
     }
 
     .produtos p {
-        font-size: 0.8em;
+        font-size: 1.4em;
+    }
+
+    .descricao {
+        min-height: auto;
     }
 
     button {
@@ -189,6 +198,10 @@ button:hover {
         display: grid;
         grid-template-columns: 49.5% 49.5%;
         gap: 1%;
+    }
+
+    button {
+        margin-bottom: 50px;
     }
 }
 
