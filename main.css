@@ -8,8 +8,9 @@
 
 
 .container {
+    max-width: 1024px;
+    width: 100%;
     margin: 0 auto;
-    width: 80vw;
 }
 
 header {
@@ -44,6 +45,10 @@ li {
     margin-bottom: none;
 }
 
+.imagem img{
+    width: 100%;
+}
+
 header li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -58,8 +63,8 @@ header li a:hover {
 
 #sobre .container {
     display: grid;
-    grid-template-columns: 49.5% 49.5%;
-    column-gap: 1%;
+    grid-template-columns: 47% 47%;
+    column-gap: 6%;
     margin-bottom: 54px;
 }
 
@@ -161,10 +166,18 @@ button:hover {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1080px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     #sobre .container {
         display: block;
         margin-bottom: 10vh;
+    }
+
+    .imagem img {
+        width: 100%;
+    }
+
+    .container {
+        width: 80vw;
     }
     
     .imagem {
@@ -176,12 +189,6 @@ button:hover {
         display: grid;
         grid-template-columns: 49.5% 49.5%;
         gap: 1%;
-    }
-
-
-
-    button {
-        
     }
 }
 
